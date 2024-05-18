@@ -47,7 +47,7 @@ const AboutUs = () => {
                                     <motion.h3 variants={titleAnim} >About</motion.h3>
                                 </Hide> */}
                                 <Hide style={{ margin: 0 }}>
-                                    <motion.h3 variants={titleAnim} >THE FACES BEHIND</motion.h3>
+                                    <motion.h3 variants={titleAnim} >THE FACES BEHIN</motion.h3>
                                 </Hide>
                                 <Hide >
                                     <motion.h4 variants={titleAnim} >where the map ends</motion.h4>
