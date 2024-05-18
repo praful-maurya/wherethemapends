@@ -6,7 +6,7 @@ const Chapters = () => {
     return (
         <Main >
             <div>
-                <h6 style={{ fontSize: '1.1rem', fontWeight: '600   ', color: 'black' }} className="text-start">Contents</h6>
+                <h6 style={{ fontSize: '1.1rem', fontWeight: '600   ', color: '#6c3428' }} className="text-start">Contents</h6>
 
                 <Col xl={12} lg={12} sm={12} className="d-flex justify-content-between">
                     <div className="text-start">
@@ -35,6 +35,6 @@ const Main = styled(Row)`
     h6{
         padding: 3px 0;
     font-weight: 600;
-    color: #525151;
+    color: #A4503d;
     }
 `

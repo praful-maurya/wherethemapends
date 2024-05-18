@@ -11,16 +11,17 @@ import BlogMain from './components/recent-blogs/BlogMain';
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: Montserrat, Arial, sans-serif;
-    
 
     h3{
-        padding-bottom: 10px;
+        padding-bottom: 15px;
+        padding-top: 1rem;
         /* font-size: 1.8rem; */
         /* color: var(--e-global-color-text);0 */
-    color: #525151;
+    /* color: #525151; */
+    color: #322C2B;
 
     font-family: "Playfair Display", Sans-serif;
-    font-size: 37px;
+    font-size: 45px;
     font-weight: 300;
     }
 
@@ -32,13 +33,17 @@ const GlobalStyle = createGlobalStyle`
     }
     p{
         font-size: 1.1rem;
-        color: #312f2f;
+        /* color: #312f2f; */
+    color: #322C2B;
+    letter-spacing: 0.1px;
+
     }
 
     h4{
       text-align: start;
       /* color: var(--brand-color); */
-    color: #525151;
+    /* color: #525151; */
+    color: #3C2A21;
 
     margin: 0 0 15px 0;
     font-weight: 700;

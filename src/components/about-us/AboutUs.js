@@ -42,12 +42,15 @@ const AboutUs = () => {
                     <Col xl={7} lg={7} md={12} sm={12}>
                         <div className="content">
 
-                            <motion.div style={{ textAlign: 'start' }}>
-                                <Hide>
+                            <motion.div style={{ textAlign: 'start', width: '79%', marginBottom: '0.8rem' }}>
+                                {/* <Hide>
                                     <motion.h3 variants={titleAnim} >About</motion.h3>
+                                </Hide> */}
+                                <Hide style={{ margin: 0 }}>
+                                    <motion.h3 variants={titleAnim} >THE FACES BEHIND</motion.h3>
                                 </Hide>
-                                <Hide>
-                                    <motion.h4 variants={titleAnim} >Preemal & Praful</motion.h4>
+                                <Hide >
+                                    <motion.h4 variants={titleAnim} >where the map ends</motion.h4>
                                 </Hide>
                             </motion.div>
 
@@ -59,13 +62,10 @@ const AboutUs = () => {
                                 and beautiful destination at a time.</motion.p>
                             <Link className="link" to="/about-us">
                                 <Hide>
-                                    <motion.h5 variants={titleAnim} >More about us</motion.h5>
+                                    <motion.h5 style={{ fontWeight: 500 }} variants={titleAnim} >Read Our Story</motion.h5>
                                 </Hide>
                             </Link>
-                            <div className="icon-div d-flex justify-content-end pt-3">
-                                {/* <div>
-                                    <h5 style={{ fontSize: '1rem ', color: 'white', fontWeight: 100, paddingTop: '3px' }}>Follow us- </h5>
-                                </div> */}
+                            {/* <div className="icon-div d-flex justify-content-end pt-3">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faFacebook} size="lg" />
                                 </div>
@@ -78,7 +78,7 @@ const AboutUs = () => {
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faWhatsapp} size="lg" />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>
@@ -108,12 +108,26 @@ margin-top: 4rem;
         font-weight: 500;
         color: #dc5d0d;
     }
+
+    h3{
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+        color: rgb(134, 82, 67);
+    }
     
       h4{
-        font-family: "Freehand", cursive;
+        text-align: end;
+        font-family: "Allura", cursive;
+        font-size: 2.7rem;
+    letter-spacing: 0.4px;
+    font-weight: 100;
+    margin: 0;
+    color: #D8AE7E;
+    
     }
 
-    .content{
+       .content{
         margin-top: 1rem;
     text-align: center;
     display: flex;

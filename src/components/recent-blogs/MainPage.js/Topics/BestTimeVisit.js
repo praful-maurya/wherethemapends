@@ -43,7 +43,7 @@ h4{
 /* font-size: 1.3rem; */
 font-weight: 600;
 /* font-family: "Lora", serif; */
-color: #3e3e3e;
+color: #6E4B21;
 }
 
 p{

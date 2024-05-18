@@ -18,7 +18,6 @@ const ParallaxNav = () => {
 
     const scroll = () => window.addEventListener('scroll', () => {
         let value = window.scrollY;
-        console.log(value)
         if (headingRef.current && value < 130) {
             headingRef.current.style.marginTop = value * 2.5 + 'px'
         }

@@ -11,11 +11,11 @@ import { Row } from "react-bootstrap";
 
 const HomePage = () => {
     return (
-        <motion.div /* exit="exit" variants={pageAnimation} initial="hidden" animate="show" */>
+        <motion.div style={{ background: '#fff2d736' }} /* exit="exit" variants={pageAnimation} initial="hidden" animate="show" */>
             <Row>
-                {/* <NavBar xl={12} lg={12} md={12} sm={12} /> */}
-                <ParallaxNav />
-                {/* <VideoComponent /> */}
+                <NavBar xl={12} lg={12} md={12} sm={12} />
+                {/* <ParallaxNav /> */}
+                <VideoComponent />
                 <AboutUs />
                 <RecentBlogs />
                 <FoodDrinks />

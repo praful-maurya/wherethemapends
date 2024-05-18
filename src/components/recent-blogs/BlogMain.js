@@ -56,6 +56,7 @@ const BlogMain = ({ blog_data }) => {
 export default BlogMain;
 
 const Main = styled(motion.div)`
+background: #FFF7EB;
 position: relative;
     margin-top: 1rem;
     .main_blog-img{

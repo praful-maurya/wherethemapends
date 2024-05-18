@@ -17,13 +17,17 @@ const Accomdations = ({ location }) => {
                                 <p>{item.extra}</p>
                             </Col>
 
-                            <Col xl={10}>
+                            <Col className="m-auto" xl={11}>
                                 {item?.topics?.map(({ topicTitle, topicDesc }) => {
                                     return (
                                         <Row>
                                             {/* <h1 className="text-start">{topicTitle}</h1> */}
-                                            <h6 dangerouslySetInnerHTML={{ __html: topicTitle }}></h6>
+                                            <Col xl={12}>
+                                                <h6 dangerouslySetInnerHTML={{ __html: topicTitle }}></h6>
+                                            </Col>
+                                            <Col xl={11}>
                                             <p dangerouslySetInnerHTML={{ __html: topicDesc }}></p>
+                                            </Col>
                                         </Row>
                                     )
                                 })}
@@ -39,11 +43,11 @@ const Accomdations = ({ location }) => {
 export default Accomdations;
 
 const Container = styled(Row)`
-            padding-bottom: 15px;
         h6{
             font-size: 1.1rem;
             font-weight: 600;
             text-align: start;
+          
         }
         li{
             font-size: 1rem;
@@ -56,7 +60,7 @@ const Container = styled(Row)`
         h4{
         /* font-size: 1.3rem; */
         font-weight: 600;
-        color: #3e3e3e;
+        color: #6E4B21;
         }
 
         p{
@@ -70,6 +74,9 @@ const Container = styled(Row)`
             cursor: pointer;
             font-weight: 600;
             /* color: rgb(99 143 209); */
-            color: rgb(99 209 132)
+            color: #2F200E;
+            &:hover{
+                color: #87ea87;
+            }
         }
 `

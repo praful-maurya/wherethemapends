@@ -17,45 +17,47 @@ const NavBar = () => {
                                 <img src="/assets/images/wtmelogo.png" alt="" />
                             </header>
                         </Col>
-                        <Col xl={5} lg={4}>
-                            <Row style={{ /* position: 'relative', left: '9rem',  */paddingTop: '14.5px' }} className="justify-content-start">
-                                <Col className="p-0" xl={2}>
-                                    <h4>Destinations</h4>
-                                </Col>
-                                <Col style={{ paddingLeft: '14px' }} className="p-0" xl={2}>
+                        <Col xl={4} lg={4}>
+                            <div className="pt-3 d-flex justify-content-around">
+                                <div /* style={{ paddingLeft: '14px' }} */ className="p-0" xl={1}>
                                     <Link to="food" spy={true} smooth={true} duration={200} offset={-50}>
                                         <h4>Food</h4>
                                     </Link>
-                                </Col>
-                                <Col className="p-0" xl={2}>
+                                </div>
+                                <div className="p-0" xl={2}>
+                                    <h4>Destinations</h4>
+                                </div>
+
+                                <div className="p-0" xl={2}>
                                     <Link to="Itineraries" spy={true} smooth={true} duration={200} >
                                         <h4>Itineraries</h4>
                                     </Link>
-                                </Col>
-                                <Col className="p-0" xl={2}>
+                                </div>
+                                <div className="p-0" xl={2}>
                                     <Link to="about" spy={true} smooth={true} duration={200} offset={-100}>
                                         <h4>About Us</h4>
                                     </Link>
-                                </Col>
-                            </Row>
+                                </div>
+
+                            </div>
                         </Col>
                         <Col>
-                            <div className="icon-div d-flex justify-content-end pt-3">
+                            <div className="icon-div d-flex justify-content-end pt-4">
                                 {/* <div>
                                     <h5 style={{ fontSize: '1rem ', color: 'white', fontWeight: 100, paddingTop: '3px' }}>Follow us- </h5>
                                 </div> */}
-                                <div className="icon">
+                                <a className="icon">
                                     <FontAwesomeIcon icon={faFacebook} size="lg" />
-                                </div>
-                                <div className="icon">
+                                </a>
+                                <a href="https://www.instagram.com/prafulfernandess/" target="_blank" className="icon">
                                     <FontAwesomeIcon icon={faInstagram} size="lg" />
-                                </div>
-                                <div className="icon">
+                                </a>
+                                <a className="icon">
                                     <FontAwesomeIcon icon={faFacebook} size="lg" />
-                                </div>
-                                <div className="icon">
+                                </a>
+                                <a className="icon">
                                     <FontAwesomeIcon icon={faWhatsapp} size="lg" />
-                                </div>
+                                </a>
                             </div>
                         </Col>
                     </Row>
@@ -70,7 +72,8 @@ export default NavBar;
 
 const Main = styled.div`
 /* position: fixed; */
-background: #f4e6d9;
+/* background: #f4e6d9; */
+background-color: #fff2d736;
   /* -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(3px); */
 
@@ -82,7 +85,7 @@ width: 99.20%;
     h4{
         font-size: 1.1rem;
         padding-top: 7px;
-        color: #222121;
+        color: #211d1ce3;
         font-weight: 600;
     }
     .icon{

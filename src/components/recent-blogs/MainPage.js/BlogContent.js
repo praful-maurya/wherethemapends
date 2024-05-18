@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import HowToReach from "./HowToReach";
 import { useLocation } from "react-router-dom";
 import BestTimeVisit from "./Topics/BestTimeVisit";
@@ -11,7 +11,7 @@ const BlogContent = () => {
     const location = useLocation()
 
     return (
-        <>
+        <div> 
             <Row>
                 <Col xl={10} lg={10} className="mt-4">
                     <HowToReach location={location} />
@@ -29,9 +29,10 @@ const BlogContent = () => {
                     <ThingsToDo location={location} />
                 </Col>
             </Row>
-        </>
+        </div>
     )
 };
 
 export default BlogContent;
+
 

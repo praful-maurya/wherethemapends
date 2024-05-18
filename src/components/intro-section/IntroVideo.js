@@ -22,25 +22,16 @@ function VideoComponent() {
 export default VideoComponent;
 
 const Main = styled(motion.Row)`
- height: 90vh; /* Set height as per your requirement */
-    background-image: url('/assets/images/praful.png');
-    background-size: cover; /* Adjust background size as per your requirement */
-    background-position: center; /* Adjust background position as per your requirement */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* &:after{
-        content: '';
-        height: 30vh;
-        background-image: url('/assets/images/papercut.png');
+ height: 100vh; 
+ width: 100%;
+    background-image: url('/assets/images/display.png');
     background-size: cover; 
     background-position: center; 
     display: flex;
     justify-content: center;
     align-items: center;
-    } */
-
-    h2{
+    background-repeat: no-repeat;
+        h2{
         font-family: "Platypi", serif;
     }
 `

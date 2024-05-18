@@ -20,7 +20,7 @@ const ThingsToDo = ({ location }) => {
                                 <img style={{ width: '100%', borderRadius: '3px' }} src={item.img} alt="" />
                             </Col>
 
-                            <Col xl={10}>
+                            <Col className="m-auto" xl={11}>
                                 {item?.topics?.map(({ topicTitle, topicDesc }) => {
                                     return (
                                         <Row>
@@ -30,7 +30,9 @@ const ThingsToDo = ({ location }) => {
                                     )
                                 })}
                             </Col>
-
+                            <Col className="pt-4" xl={12}>
+                                <p>{item.note}</p>
+                            </Col>
                         </Container>
                     </>
                 )
@@ -53,7 +55,7 @@ h4{
 /* font-size: 1.3rem; */
 font-weight: 600;
 /* font-family: "Lora", serif; */
-color: #3e3e3e;
+color: #6E4B21;
 }
 
 p{

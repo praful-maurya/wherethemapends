@@ -28,26 +28,29 @@ const FoodDrinks = () => {
                 <div>
                     <motion.div>
                         <Hide>
-                            <motion.h3 variants={titleAnim}>Food And Drinks</motion.h3>
+                            <motion.h3 variants={titleAnim}>FOOD BLOGS</motion.h3>
                         </Hide>
                     </motion.div>
                 </div>
 
+                <Col className="m-auto" xl={11}>
                 <BlogContent>
                     {FoodDrinksData.map(({ image, title, location }) => {
                         return (
-                            <Col xl={4} lg={4} md={6} sm={10} >
+                            <Col className="m-auto" xl={4} lg={4} md={6} sm={10} >
                                 <div className="img_div">
                                     <img src={image} alt="image" />
-                                </div>
-                                <div className="blog-title">
+                                    <div className="blog-title">
                                     <p>{title}</p>
-                                    <p style={{ fontSize: '10px' }}>{location}</p>
+                                        <small>{location}</small>
                                 </div>
+                                </div>
+
                             </Col>
                         )
                     })}
                 </BlogContent>
+                </Col>
             </Main>
         </Element>
 
@@ -56,74 +59,75 @@ const FoodDrinks = () => {
 
 export default FoodDrinks;
 
-const Main = styled(motion.div)`
-    margin-top:5rem; 
+const Main = styled(motion(Row))`
+    margin-top:4.5rem; 
+    overflow: auto;
+    h3{
+        padding: 0;
+        margin: 0;
+    }
 `
 
 const BlogContent = styled(Row)`
-margin: auto;
-    padding-left: 4rem;
-    /* display: flex; */
-    /* overflow-x: auto;  */
     cursor: pointer;
-    /* flex-wrap: wrap; */
-/* width: 100%; */
-
-::-webkit-scrollbar {
-    width: 10px;
-  }
-
   ::-webkit-scrollbar-track {
     border: 1px solid #d8d7d7;
     padding: 4px 0;
     background-color: #f0e9e9;
     border-radius: 1rem;
-    /* width: 90%; */
-    /* margin-top: 5px; */
   }
 
 .img_div{
-    /* padding: 0 75px; */
+    padding-top: 2rem;
 }
-
     .blog-container{
         height: auto;
     width: 100%;
     }
-
     img {
-        height: 280px;
+        height: 290px;
     width: auto;
+    margin: auto;
+    box-shadow: none;
         transition: 0.3s all ease;
-        margin-top: 0.7rem;
-    /* margin-right: 0.7rem; */
-    /* margin-bottom: 5px; */
-    /* box-shadow: rgb(210 206 206) 0px 1px 8px; */
     text-align: center;
-    /* border-radius: 20px; */
     display: flex;
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 5px 5px;
-    border-radius: 12px;
         &:hover {
-            transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+            transform: scale(1.02);
         }
-    }
-    
-    p {
+    }    
+    /* p {
         padding-top: 0.1rem;
-        /* padding-left: 2rem; */
-        /* text-align: start; */
         font-weight: 500;
-        font-size: 1rem;
         margin: 0;
-    }
+        font-size: 1.1rem;
+    } */
+
+   
 
     .blog-title {
-        width: 90%;
-        text-align: start;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding-left: 0.4rem;
+        padding-top: 1rem;
+
+        p {
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 500;
+            /* line-height: var(--goat-line-height, 2rem); */
+        }
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: var(--goat-text-underline-offset, .4375rem);
+            text-decoration-thickness: 1px;
+            text-decoration-skip-ink: none;
+        }
     }
 
     

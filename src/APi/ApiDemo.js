@@ -1,33 +1,33 @@
 export const FoodDrinksData = [
     {
         image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
+        title: 'Magna Cafe & Bar',
+        location: 'Maharashtra Mumbai'
+    },
+    {
+        image: '/assets/images/vadapav.png',
+        title: 'Pink Martini',
+        location: 'Maharashtra Mumbai'
     },
     {
         image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
+        title: 'Baoji asian home',
+        location: 'Maharashtra Mumbai'
     },
     {
         image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
+        title: 'Bibhitaki',
+        location: 'South Goa'
     },
     {
         image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
+        title: 'Ela',
+        location: 'South Goa'
     },
     {
         image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
-    },
-    {
-        image: '/assets/images/food.png',
-        title: 'title',
-        location: 'kasol'
+        title: 'Sabali',
+        location: 'Himachal Pradesh'
     },
 ];
 
